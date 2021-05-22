@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Landing Page - With Background Video Slider | Travel</title>
+    <link rel="stylesheet" href="css/account-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="brand">Homepage</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+
+          <div class="dropdown">
+            <a href="about.html" class="droptab">About Us
+             <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">News</a>
+              <a href="#">Gallery</a>
+              <a href="#">Destination</a>
+              <a href="#">Reviews</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="droptab">Booking
+             <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Rooms</a>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <a href="#" class="droptab">Account
+             <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Sign up</a>
+              <a href="#">Log in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="css/1.mp4" autoplay muted loop></video>
+     
+    </section>
+
+    <div id="content">
+        <div id="LoginForm">
+            <div id="container">
+                <form onsubmit="return fullNameValidation()">
+                    <p><h1>Log In</h1></p>
+                    
+                    <p>Username</p>
+                    <input type="text" size="40" id="inputUsername" required placeholder="Username">
+                    <div id="invalidUsername" style="color:red; visibility:hidden;">Please write your username correctly!</div>
+                    
+                    <p>Password</p>
+                    <input type="password" size="40" id="inputPassword" required placeholder="Password">
+                    <div id="invalidPassword" style="color:red; visibility:hidden;">Please write your password!</div>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+                
+                <div class="upassword"><p><a href="login.html">Can't remember the password?</a></p></div>
+                <div class="signup"><p><a href="signin.html">Sign Up</a></p> </div>
+                
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+      
